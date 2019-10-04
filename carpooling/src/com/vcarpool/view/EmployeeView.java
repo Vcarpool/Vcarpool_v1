@@ -19,6 +19,9 @@ public void showRegistrationSuccess(RegisterEmployeeModel model) {
 	public void validationFailedError() {
 		  System.out.println("Data validation failed!!");
 	  }
+	public void loginSuccess() {
+		  System.out.println("login Successful");
+	  }
 	public void loginFailedError() {
 		  System.out.println("login failed!!");
 	  }

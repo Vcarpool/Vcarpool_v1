@@ -95,17 +95,19 @@ public class MainView {
 	{
 		// TODO Auto-generated method stub
 		try(
-				InputStreamReader reader=
-				new InputStreamReader(System.in);
-					BufferedReader buffer=new BufferedReader(reader);
+//				InputStreamReader reader=
+//				new InputStreamReader(System.in);
+//					BufferedReader buffer=new BufferedReader(reader);
 				Scanner sc=new Scanner(System.in);
 					
 		     ){
 			
 			System.out.println("Enter EmployeeId:");
+//			int employeeId=Integer.parseInt(buffer.readLine());
 			int employeeId=sc.nextInt();
 			System.out.println("Enter Password:");
-			String password=sc.nextLine();
+//			String password=buffer.readLine().trim();
+			String password=sc.next();
 			FrontController controller=new FrontController();
 			controller.userAuthentication(employeeId, password);
 			
@@ -117,6 +119,10 @@ public class MainView {
 	}
 
 	public void employeeMenu() {
+		
+	System.out.print("Login Successful");
+	mainMenu();
+
 
 	}
 	
